@@ -45,3 +45,279 @@
 
     </div>
 </nav>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Maquetación</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color: #f0f2f5;
+      scroll-behavior: smooth;
+    }
+
+    .cv-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .cv-header {
+      background: linear-gradient(135deg, #1e2b3c, #2c3e50);
+      color: #fff;
+      padding: 40px;
+    }
+
+    .cv-avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: #4a6a8b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      border: 4px solid rgba(255,255,255,0.25);
+    }
+
+    .cv-seccion h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #1e2b3c;
+      border-bottom: 3px solid #2c3e50;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    .cv-item {
+      margin-bottom: 22px;
+    }
+
+    .barra {
+      height: 8px;
+      background: #e4eaf0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .barra .progreso {
+      height: 100%;
+      background: linear-gradient(90deg, #2c3e50, #4a6a8b);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 40px;
+      font-weight: 600;
+      padding: 10px 24px;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebe5a;
+      color: #fff;
+    }
+
+    .btn-inicio {
+      background-color: #fff;
+      color: #1e2b3c;
+      border-radius: 40px;
+      font-weight: 600;
+      padding: 10px 24px;
+    }
+
+    .btn-inicio:hover {
+      background-color: #e9eef3;
+      color: #1e2b3c;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== CONTENEDOR CV ===== -->
+  <div class="cv-container" id="inicio">
+
+    <!-- ===== CABECERA ===== -->
+    <div class="cv-header">
+      <div class="row align-items-center g-4">
+
+        <!-- Avatar -->
+        <div class="col-md-3 text-center text-md-start">
+          <div class="cv-avatar mx-auto mx-md-0">
+            <i class="bi bi-person"></i>
+          </div>
+        </div>
+
+        <!-- Datos + Botones -->
+        <div class="col-md-9">
+          <h1 class="fw-bold mb-1">[Nombre Completo]</h1>
+          <p class="fs-5 text-info mb-3">[Profesión / Cargo]</p>
+
+          <div class="d-flex flex-wrap gap-3 mb-3">
+            <span><i class="bi bi-envelope-fill me-1"></i> [correo@ejemplo.com]</span>
+            <span><i class="bi bi-telephone-fill me-1"></i> [Teléfono]</span>
+            <span><i class="bi bi-geo-alt-fill me-1"></i> [Ciudad, País]</span>
+          </div>
+
+          <!-- Botones -->
+          <div class="d-flex flex-wrap gap-2">
+            <a href="https://wa.me/000000000000" target="_blank" class="btn btn-whatsapp">
+              <i class="bi bi-whatsapp me-2"></i> WhatsApp
+            </a>
+            <a href="#inicio" class="btn btn-inicio">
+              <i class="bi bi-arrow-up-circle me-2"></i> Volver al inicio
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== CUERPO ===== -->
+    <div class="p-4 p-md-5">
+      <div class="row g-5">
+
+        <!-- COLUMNA IZQUIERDA -->
+        <div class="col-lg-8">
+
+          <!-- Perfil -->
+          <section class="cv-seccion mb-5">
+            <h2><i class="bi bi-person-badge me-2"></i> Perfil Profesional</h2>
+            <p class="text-secondary">[Descripción breve del perfil profesional]</p>
+          </section>
+
+          <!-- Experiencia -->
+          <section class="cv-seccion mb-5">
+            <h2><i class="bi bi-briefcase-fill me-2"></i> Experiencia Laboral</h2>
+
+            <div class="cv-item">
+              <div class="d-flex justify-content-between flex-wrap">
+                <h5 class="fw-bold mb-1">[Cargo]</h5>
+                <span class="badge bg-secondary">[Fecha inicio - Fecha fin]</span>
+              </div>
+              <p class="fw-semibold text-dark mb-1">[Nombre de la empresa]</p>
+              <p class="text-secondary">[Descripción de responsabilidades y logros]</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="d-flex justify-content-between flex-wrap">
+                <h5 class="fw-bold mb-1">[Cargo]</h5>
+                <span class="badge bg-secondary">[Fecha inicio - Fecha fin]</span>
+              </div>
+              <p class="fw-semibold text-dark mb-1">[Nombre de la empresa]</p>
+              <p class="text-secondary">[Descripción de responsabilidades y logros]</p>
+            </div>
+          </section>
+
+          <!-- Educación -->
+          <section class="cv-seccion">
+            <h2><i class="bi bi-mortarboard-fill me-2"></i> Educación</h2>
+
+            <div class="cv-item">
+              <div class="d-flex justify-content-between flex-wrap">
+                <h5 class="fw-bold mb-1">[Título]</h5>
+                <span class="badge bg-secondary">[Año]</span>
+              </div>
+              <p class="fw-semibold text-dark mb-1">[Institución]</p>
+              <p class="text-secondary">[Descripción breve]</p>
+            </div>
+
+            <div class="cv-item">
+              <div class="d-flex justify-content-between flex-wrap">
+                <h5 class="fw-bold mb-1">[Título]</h5>
+                <span class="badge bg-secondary">[Año]</span>
+              </div>
+              <p class="fw-semibold text-dark mb-1">[Institución]</p>
+              <p class="text-secondary">[Descripción breve]</p>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- COLUMNA DERECHA -->
+        <div class="col-lg-4">
+
+          <!-- Habilidades -->
+          <section class="cv-seccion mb-5">
+            <h2><i class="bi bi-gear-fill me-2"></i> Habilidades</h2>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <span class="fw-semibold">[Habilidad 1]</span>
+                <span class="text-muted">90%</span>
+              </div>
+              <div class="barra"><div class="progreso" style="width:90%"></div></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <span class="fw-semibold">[Habilidad 2]</span>
+                <span class="text-muted">80%</span>
+              </div>
+              <div class="barra"><div class="progreso" style="width:80%"></div></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <span class="fw-semibold">[Habilidad 3]</span>
+                <span class="text-muted">75%</span>
+              </div>
+              <div class="barra"><div class="progreso" style="width:75%"></div></div>
+            </div>
+          </section>
+
+          <!-- Idiomas -->
+          <section class="cv-seccion mb-5">
+            <h2><i class="bi bi-globe2 me-2"></i> Idiomas</h2>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex justify-content-between border-bottom py-2">
+                <span>[Idioma 1]</span><span class="text-muted">[Nivel]</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom py-2">
+                <span>[Idioma 2]</span><span class="text-muted">[Nivel]</span>
+              </li>
+              <li class="d-flex justify-content-between py-2">
+                <span>[Idioma 3]</span><span class="text-muted">[Nivel]</span>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Certificaciones -->
+          <section class="cv-seccion">
+            <h2><i class="bi bi-award-fill me-2"></i> Certificaciones</h2>
+            <ul class="list-unstyled mb-0">
+              <li class="d-flex justify-content-between border-bottom py-2">
+                <span>[Certificación 1]</span><span class="text-muted">[Año]</span>
+              </li>
+              <li class="d-flex justify-content-between border-bottom py-2">
+                <span>[Certificación 2]</span><span class="text-muted">[Año]</span>
+              </li>
+              <li class="d-flex justify-content-between py-2">
+                <span>[Certificación 3]</span><span class="text-muted">[Año]</span>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
