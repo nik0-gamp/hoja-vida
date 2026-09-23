@@ -41,22 +41,145 @@
                     <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
-        </div>
-
+        </div>  
     </div>
 </nav>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Maquetación</title>
+<main id="inicio">
 
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!-- Bootstrap Icons -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div id="miCarrusel"
+         class="carousel slide"
+         data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+
+            <button type="button"
+                    data-bs-target="#miCarrusel"
+                    data-bs-slide-to="0"
+                    class="active">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#miCarrusel"
+                    data-bs-slide-to="1">
+            </button>
+
+            <button type="button"
+                    data-bs-target="#miCarrusel"
+                    data-bs-slide-to="2">
+            </button>
+
+        </div>
+
+
+        <div class="carousel-inner">
+
+            <!-- Primera imagen -->
+            <div class="carousel-item active">
+
+                <img src="img/images (1).jpg"
+                     class="d-block w-100"
+                     style="height: 500px; object-fit: contain;"
+                     alt="Foto personal">
+
+                <div class="carousel-caption">
+                    <h1>gripo hoja de vida </h1>
+
+                    <p>
+                        Tecnólogo en Análisis y Desarrollo de Software
+                    </p>
+
+                    <a href="#contacto"
+                       class="btn btn-primary">
+                        Contactarme
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Segunda -->
+            <div class="carousel-item">
+                
+                <div class="bg-secondary"
+                     style="height: 500px;">
+                      <img src="img/istockphoto-542701780-612x612.jpg"
+                     class="d-block w-100"
+                     style="height: 500px; object-fit: contain;"
+                     alt="Foto personal">
+                </div>
+
+                <div class="carousel-caption">
+
+                    <h1>Desarrollo Web</h1>
+
+                    <p>
+                        Interesado en crear páginas web modernas
+                        y funcionales.
+                    </p>
+
+                    <a href="#habilidades"
+                       class="btn btn-primary">
+                        Ver habilidades
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tercera -->
+            <div class="carousel-item">
+
+                <div class="bg-dark"
+                     style="height: 500px;">
+                      <img src="img/images.jpg"
+                     class="d-block w-100"
+                     style="height: 500px; object-fit: contain;"
+                     alt="Foto personal">
+                </div>
+
+                <div class="carousel-caption">
+
+                    <h1>Mis proyectos</h1>
+
+                    <p>
+                        Conoce algunos de mis proyectos académicos.
+                    </p>
+
+                    <a href="#proyectos"
+                       class="btn btn-primary">
+                        Ver proyectos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Botón anterior -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#miCarrusel"
+                data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+
+        <!-- Botón siguiente -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#miCarrusel"
+                data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+    </div>
 
   <style>
     body {
