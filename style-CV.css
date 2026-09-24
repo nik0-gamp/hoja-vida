@@ -3,22 +3,6 @@ body {
       scroll-behavior: smooth;
       margin: 0px;
     }
-     figure {
-            text-align: center;
-        }
-
-        img {
-            max-width: 35%;
-            border-radius: 8px;
-        }
-        .foto {
-           width: 140px;
-           height: 180px;
-           object-fit: cover;
-           border-radius: 50%;
-           display: block;
-           margin: 15px 0;
-        }
 
     .cv-container {
       max-width: 1000px;
