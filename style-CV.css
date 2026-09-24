@@ -12,6 +12,21 @@ body {
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       overflow: hidden;
     }
+    .cv-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #0dcaf0;
+    background-color: #212529;
+}
+
+.cv-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
     .cv-header {
       background: linear-gradient(135deg, #1e2b3c, #2c3e50);
