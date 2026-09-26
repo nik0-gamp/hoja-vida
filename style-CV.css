@@ -187,6 +187,79 @@ textarea {
     background-color: #495057;
 }
 
+.perfil-card {
+    width: 280px;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.perfil-card:hover {
+    transform: translateY(-5px);
+}
+
+.perfil-foto {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+
+.perfil-card .card-title {
+    color: #26384a;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   TARJETAS DE PROYECTOS
+   ========================================= */
+
+.proyecto-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.proyecto-card .card-title {
+    color: #26384a;
+    font-weight: bold;
+}
+
+.pagina {
+            background-color: #121212;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .titulo {
+            color: #39ff88;
+            font-weight: bold;
+            font-size: 45px;
+        }
+
+        .texto {
+            color: #d0d0d0;
+            font-size: 18px;
+        }
+
+        .imagen {
+            max-width: 350px;
+        }
 /* Adaptación para celulares */
 
 @media (max-width: 700px) {
